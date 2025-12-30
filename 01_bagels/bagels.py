@@ -58,6 +58,11 @@ def main():
       if palpite == numero_secreto:
         break
 
+
+    if num_tentativas > MAX_TENTATIVAS:
+      print("\n ❌ Suas tentativas acabaram!")
+      print(f"A resposta era {numero_secreto}.")
+    
     break # temporário - remove depois
 
   print("Obrigado por jogar!" )
