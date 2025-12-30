@@ -21,7 +21,19 @@ repetidas) para explorar este conceito.
 (Não é realmente um paradoxo, é apenas um resultado surpreendente!)
 
 """)
-  # TODO: solicitar quantidade de aniversários
+
+  while True:
+    print("Quantos aniversários devo gerar? (Máximo 100)")
+    resposta = input("> ")
+
+    if resposta.isdecimal() and (0 < int(resposta) <= 100):
+      num_aniversarios = int(resposta)
+      break
+    else:
+      print("❌ Digite um número entre 1 e 100!")
+
+  print()
+
   # TODO: Gerar e exibir aniversários
   # TODO: Rodar simulações
   
