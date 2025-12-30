@@ -32,11 +32,20 @@ repetidas) para explorar este conceito.
     else:
       print("❌ Digite um número entre 1 e 100!")
 
-  print()
+  
 
-  # TODO: Gerar e exibir aniversários
+  print(f"Aqui estão {num_aniversarios} aniversários:")
+  aniversarios = getBirthdays(num_aniversarios)
+
+  for i, aniversario in enumerate(aniversarios):
+    if i != 0:
+      print(", ", end="")
+    print(formatarData(aniversario), end="")
+
   # TODO: Rodar simulações
   
+  print()
+  print()
   pass
 
 
@@ -62,6 +71,9 @@ def getMatch(aniversarios):
       if aniversarioA == aniversarioB:
         return aniversarioA
 
+def formatarData(data):
+  nome_mes = MESES[data.month - 1]
+  return f"{nome_mes} {data.day}"
 
 if __name__ == "__main__":
   main()
