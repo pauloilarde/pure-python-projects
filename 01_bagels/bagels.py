@@ -9,9 +9,24 @@ NUM_DIGITOS = 3
 MAX_TENTATIVAS = 10
 
 def main():
-  print("Bagels - Jogo de lógica dedutiva")
-  print("=" * 46)
-  # TODO: implementar lógica do jogo
+  print("""Bagels - Jogo de lógica dedutiva
+        Estou pensando em um número de {NUM_DIGITOS} dígitos sem repetições.
+        Tente adivinhar. Aqui estão as pistas:
+
+        Quando eu disser:    Significa:
+        Pico                 Um dígito está correto mas na posição errada
+        Fermi                Um dígito está correto e na posição correta
+        Bagels               Nenhum dígito está correto
+
+        Por exemplo, se o número secreto fosse 248 e seu palpite fosse 843,
+        as pistas seriam: Fermi Pico
+        
+        """)
+  
+  # TODO: Loop de partidas
+
+  print("Obrigado por jogar!" )
+
 
 
 def getNumeroSecreto():
