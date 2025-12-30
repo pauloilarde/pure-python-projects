@@ -23,7 +23,13 @@ def main():
         
         """)
   
-  # TODO: Loop de partidas
+  
+  while True:
+    numero_secreto = getNumeroSecreto()
+    print("Pensei em um número.")
+    print("Você tem {MAX_TENTATIVAS} tentativas.\n")
+
+    break # temporário - remove depois
 
   print("Obrigado por jogar!" )
 
