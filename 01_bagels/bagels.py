@@ -51,9 +51,12 @@ def main():
 
         break
 
-      # TODO: processar palpite
-
+      pistas = getPistas(palpite, numero_secreto)
+      print(pistas)
       num_tentativas += 1
+
+      if palpite == numero_secreto:
+        break
 
     break # temporário - remove depois
 
