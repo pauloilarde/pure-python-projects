@@ -29,6 +29,32 @@ def main():
     print("Pensei em um número.")
     print("Você tem {MAX_TENTATIVAS} tentativas.\n")
 
+    num_tentativas = 1
+    while num_tentativas <= MAX_TENTATIVAS:
+      palpite = ""
+
+      while True:
+        print(f"Tentativa #{num_tentativas}: ", end="")
+        palpite = input()
+
+        if not palpite.isdecimal():
+          print("❌ Digite apenas números!")
+          continue
+
+        if len(palpite) != NUM_DIGITOS:
+          print(f"❌ O número precisa ter exatamente {NUM_DIGITOS} dígitos!")
+          continue
+
+        if len(set(palpite)) != len(palpite):
+          print("❌ O número não pode ter dígitos repetidos!")
+          continue
+
+        break
+
+      # TODO: processar palpite
+
+      num_tentativas += 1
+
     break # temporário - remove depois
 
   print("Obrigado por jogar!" )
