@@ -52,7 +52,22 @@ repetidas) para explorar este conceito.
 
   print()
 
-  # TODO: Rodar simulações
+  print(f"Gerando {num_aniversarios} aniversários aleatórios 100.000 vezes...")
+  input("Pressione ENTER para começar...")
+
+  print("Executando 100.000 simulações...")
+  coincidências = 0
+
+  for i in range(100_000):
+    if i % 10_000 == 0:
+      print(f"{i:,} simulações executadas...".replace(',', '.'))
+
+    aniversarios_sim = getBirthdays(num_aniversarios)
+    if getMatch(aniversarios_sim) is not None:
+      coincidências += 1
+    
+    print("100.000 simulações concluídas!")
+    print()
   
   print()
   print()
