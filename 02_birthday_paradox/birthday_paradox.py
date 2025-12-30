@@ -66,8 +66,8 @@ repetidas) para explorar este conceito.
     if getMatch(aniversarios_sim) is not None:
       coincidencias += 1
     
-    print("100.000 simulações concluídas!")
-    print()
+  print("100.000 simulações concluídas!")
+  print()
   
   
   probabilidade = round(coincidencias / 100_000 * 100, 2)
