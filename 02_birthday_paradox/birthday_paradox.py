@@ -32,7 +32,7 @@ repetidas) para explorar este conceito.
     else:
       print("❌ Digite um número entre 1 e 100!")
 
-  
+  print()
 
   print(f"Aqui estão {num_aniversarios} aniversários:")
   aniversarios = getBirthdays(num_aniversarios)
@@ -41,6 +41,16 @@ repetidas) para explorar este conceito.
     if i != 0:
       print(", ", end="")
     print(formatarData(aniversario), end="")
+
+  coincidencia = getMatch(aniversarios)
+
+  print("Nesta simulação, ", end="")
+  if coincidencia is not None:
+    print(f"Várias pessoas fazem aniversário em {formatarData(coincidencia)}")
+  else:
+    print("não há aniversários coincidentes.")
+
+  print()
 
   # TODO: Rodar simulações
   
