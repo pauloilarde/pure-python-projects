@@ -28,5 +28,15 @@ def getBirthdays(quantidade):
 
   return aniversarios
 
+def getMatch(aniversarios):
+  if len(aniversarios) == len(set(aniversarios)):
+    return None
+  
+  for a, aniversarioA in enumerate(aniversarios):
+    for b, aniversarioB in enumerate(aniversarios[a + 1:]):
+      if aniversarioA == aniversarioB:
+        return aniversarioA
+
+
 if __name__ == "__main__":
   main()
