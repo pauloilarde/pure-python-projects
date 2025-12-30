@@ -63,9 +63,13 @@ def main():
       print("\n ❌ Suas tentativas acabaram!")
       print(f"A resposta era {numero_secreto}.")
     
-    break # temporário - remove depois
+    print("\n Quer jogar novamente? (sim ou não)")
+    resposta = input("> ").lower()
 
-  print("Obrigado por jogar!" )
+    if not resposta.startswith("s"):
+      break
+
+  print("\nObrigado por jogar!" )
 
 
 
