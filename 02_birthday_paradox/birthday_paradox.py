@@ -56,7 +56,7 @@ repetidas) para explorar este conceito.
   input("Pressione ENTER para começar...")
 
   print("Executando 100.000 simulações...")
-  coincidências = 0
+  coincidencias = 0
 
   for i in range(100_000):
     if i % 10_000 == 0:
@@ -64,14 +64,19 @@ repetidas) para explorar este conceito.
 
     aniversarios_sim = getBirthdays(num_aniversarios)
     if getMatch(aniversarios_sim) is not None:
-      coincidências += 1
+      coincidencias += 1
     
     print("100.000 simulações concluídas!")
     print()
   
-  print()
-  print()
-  pass
+  
+  probabilidade = round(coincidencias / 100_000 * 100, 2)
+
+  print(f" Das 100.000 simulações de {num_aniversarios} pessoas, houve")
+  print(f"aniversário coincidente em {coincidencias:,} vezes.".replace(',', '.'))
+  print(f"Isso significa que {num_aniversarios} pessoas tem {probabilidade}%")
+  print("de chance de ter aniversário coincidente no grupo")
+  print("Provavelment mais do que você imaginaria!")
 
 
 def getBirthdays(quantidade):
