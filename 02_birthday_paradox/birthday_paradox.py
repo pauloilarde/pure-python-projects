@@ -10,8 +10,21 @@ import random
 MESES = ('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez')
 
 def main():
-  """Função principal"""
-  # TODO: implementar lógica
+  print(""" Paradoxo do aniversário
+        
+        O paradoxo do aniversário mostra que em um grupo de N pessoas,
+a chance de duas delas terem o mesmo aniversário é surpreendentemente alta.
+
+Este programa faz uma simulação de Monte Carlo (simulações aleatórias
+repetidas) para explorar este conceito.
+
+(Não é realmente um paradoxo, é apenas um resultado surpreendente!)
+
+""")
+  # TODO: solicitar quantidade de aniversários
+  # TODO: Gerar e exibir aniversários
+  # TODO: Rodar simulações
+  
   pass
 
 
