@@ -45,7 +45,16 @@ def main():
     print("❌Mensagem não pode estar vazia")
     sys.exit()
 
-  # TODO: Processar bitmap
+  print()
+
+  for linha in BITMAP.splitlines():
+    for i, bit in enumerate(linha):
+      if bit == " ":
+        print(" ", end="")
+      else:
+        print(mensagem[i % len(mensagem)], end="")
+    
+    print()
   
 
 
