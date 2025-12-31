@@ -36,7 +36,17 @@ BITMAP = """
 def main():
   print("Bitmap Message")
   print("=" * 50)
-  #TODO: implementar lógica
+  print("Digite a mensagem para exibir no bitmap.")
+  print("(A mensagem será repetida para preencher o bitmap)")
+
+  mensagem = input("> ")
+
+  if mensagem == "":
+    print("❌Mensagem não pode estar vazia")
+    sys.exit()
+
+  # TODO: Processar bitmap
+  
 
 
 if __name__ == "__main__":
